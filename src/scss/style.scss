@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+// Color
+$light: #00FEFF;
+$dark: #001E42;
+$txt-dark: #252D37;
+$txt-light: #A5AAAF;
+$txt-ultra: #002047;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+a{text-decoration: none;}
+ul,ol{list-style: none;}
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header{
+    background: url(../img/background.jpg) center/cover #01244e;
+    padding: 37px 0 70px;
+    &__navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 76px;
+    }&__burger{
+        display: none;
+    }
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item{
+        margin: 0 20px;
+    }
+    &__link{
+        color: #fff;
+        font-weight: 400;
+    }
+    &__tel{
+        text-align: right;
+        &-txt{
+            color: #fff;
+            font-size: 12px;
+        }
+        &-num{
+            color: #fff;
+            font-weight: 700;
+            font-size: 17px;
+            margin-left: 13px;
+        }
+    }
+    &__main{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__title{
+        color: $light;
+        font-weight: 900;
+        font-size: 50px;
+        margin-bottom: 57px;
+    }
+    &__subtitle{
+        font-weight: 900;
+        color: $light;
+        margin-bottom: 10px;
+    }
+    &__price{
+        color: #fff;
+        margin-bottom: 28px;
+        font-weight: 400;
+        span{
+            font-size: 24px;
+            font-weight: 900;
+        }
+    }
+    &__btn{
+        padding: 15px 22px;
+        display: flex;
+        align-items: center;
+        color: $txt-ultra;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 700;   
+        outline: none;
+        border: none;
+        background-color: $light;
+        img{
+            margin-left: 11px;
+        }
+    }
+    &__text{
+        color: #fff;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: right;
+        max-width: 390px;
+    }
+}
+@media (max-width: 750px){
+    body{
+        font-size: 16px;
+    }
+    .header{
+        &__title{
+            font-size: 40px;
+        }
+    }
+}
+@media(max-width: 668px){
+    .header{
+        &__nav, .header__tel{
+            display: none;
+        }
+        &__burger{
+            display: block;
+            height: 2px;
+            width: 30px;
+            background-color: #fff;
+            position: relative;
+            cursor: pointer;
+            &::before{
+                content: '';
+                height: 2px;
+                width: 30px;
+                top: -10px;
+                background-color: #fff;
+                position: absolute;
+            }
+            &::after{
+                content: '';
+                height: 2px;
+                width: 30px;
+                background-color: #fff;
+                position: absolute;
+                bottom: -10px;
+            }
+        }
+        .active{
+            background: none;
+            &::before{
+                transform: rotate(-45deg);
+                top: 0;
+            }
+            &::after{
+                transform: rotate(45deg);
+                bottom: 0;
+            }
+        }
+        &__main{
+            display: block;
+        }
+        &__btn{
+            margin-bottom: 37px;
+        }
+        &__text{
+            text-align: left;
+        }
+    }
+}
