@@ -8,30 +8,93 @@
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="header__navbar">
-                <div class="header__log"><img src="./src/img/logo.svg" alt="logotype"></div>
-                <ul class="header__nav">
-                    <li class="header__item"><a href="#" class="header__link">О нас</a></li>
-                    <li class="header__item"><a href="#" class="header__link">Услуги</a></li>
-                    <li class="header__item"><a href="#" class="header__link">Цены</a></li>
-                </ul>
-                <ul class="header__tel">
-                    <li class="header__tel-txt">lifecell<a href="#" class="header__tel-num">+380 93 541 20 92</a></li>
-                    <li class="header__tel-txt">Vodafone<a href="#" class="header__tel-num">+380 99 311 29 79</a></li>
-                </ul>
-                <div class="header__burger"></div>
-            </div>
-            <div class="header__main">
-                <div class="header__content">
-                    <h1 class="header__title">IT-Аутсорсинг<br/>компаниям в Киеве</h1>
-                    <p class="header__subtitle">Обслуживание компьютеров в Киеве</p>
-                    <p class="header__price">От <span>315грн</span>/мес<br/>за 1 рабочее место</p>
-                    <button class="header__btn">Отправить заявку<img src="./src/img/arrow.svg" alt="arrow"></button>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__navbar">
+                    <div class="header__log"><img src="./src/img/logo.svg" alt="logotype"></div>
+                    <ul class="header__nav">
+                        <li class="header__item"><a href="#" class="header__link">О нас</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Услуги</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Цены</a></li>
+                    </ul>
+                    <ul class="header__tel">
+                        <li class="header__tel-txt">lifecell<a href="#" class="header__tel-num">+380 93 541 20 92</a></li>
+                        <li class="header__tel-txt">Vodafone<a href="#" class="header__tel-num">+380 99 311 29 79</a></li>
+                    </ul>
+                    <div class="header__burger"></div>
                 </div>
-                <p class="header__text">Мы знаем как сложно найти хорошую компанию по обслуживанию компьютеров в Киеве. Исправим это!</p>
+                <div class="header__main">
+                    <div class="header__content">
+                        <h1 class="header__title">IT-Аутсорсинг<br/>компаниям в Киеве</h1>
+                        <p class="header__subtitle">Обслуживание компьютеров в Киеве</p>
+                        <p class="header__price">От <span>315грн</span>/мес<br/>за 1 рабочее место</p>
+                        <button class="btn">Отправить заявку<img src="./src/img/arrow.svg" alt="arrow"></button>
+                    </div>
+                    <p class="header__text">Мы знаем как сложно найти хорошую компанию по обслуживанию компьютеров в Киеве. Исправим это!</p>
+                </div>
             </div>
+        </header>
+        <main class="main">
+            <section class="about">
+                <div class="container">
+                    <h2 class="title">О нас</h2>
+                    <p class="about__text">IT-SPK - сервисная компания по обслуживанию АйТи инфраструктуры для бизнеса. Мы небольшая команда фанатов своего дела c многолетним опытом работы. Решаем любые ИТ задачи в Киеве: проектирование, монтаж и поддержка ИТ инфраструктуры, настройка и поддержка серверов, виртуализация, обслуживание компьютеров, поддержка пользователей.</p>
+                </div>
+            </section>
+            <section class="service">
+                <div class="container">
+                    <h2 class="title">Услуги</h2>
+                    <ul class="service__block">
+                        <li class="service__item">
+                            <div class="service__img"><img src="./src/img/service/icon1.svg" alt="service-icon"></div>
+                            <p class="service__item-text">Обслуживание компьютеров</p>
+                        </li>
+                        <li class="service__item">
+                            <div class="service__img"><img src="./src/img/service/icon2.svg" alt="service-icon"></div>
+                            <p class="service__item-text">Обслуживание серверов</p>
+                        </li>
+                        <li class="service__item">
+                            <div class="service__img"><img src="./src/img/service/icon3.svg" alt="service-icon"></div>
+                            <p class="service__item-text">Виртуализация 1С</p>
+                        </li>
+                        <li class="service__item">
+                            <div class="service__img"><img src="./src/img/service/icon4.svg" alt="service-icon"></div>
+                            <p class="service__item-text">Аудит ИТ-инфраструктуры и проектирование</p>
+                        </li>
+                        <li class="service__item">
+                            <div class="service__img"><img src="./src/img/service/icon5.svg" alt="service-icon"></div>
+                            <p class="service__item-text">Резервное копирование</p>
+                        </li>
+                        <!-- 268 -->
+                        <li class="service__item"> 
+                            <div class="service__img"><img src="./src/img/service/icon6.svg" alt="service-icon"></div>
+                            <p class="service__item-text">Переезд ИТ инфраструктуры</p>
+                        </li>
+                    </ul>
+                    <h3 class="service__title">C IT-SPK ваш офис будет работать эффективно и безотказно</h3>
+                    <div class="service__text-block">
+                        <p class="service__text">За время работы мы подобрали оптимальные решения по соотношению цена-качество для организации офисной IT-инфраструктуры. Огромный опыт обслуживания объектов в Киеве от офиса на несколько рабочих мест до офисно-производственных комплексов на тысячи квадартных метров и более полутора сотен подключенных абонентов.</p>
+                        <p class="service__text">Абонентское обслуживание компьютеров в Киеве уже сейчас не оставляет шансов на выживание обычным сисадминам в штате компании, прежний подход дороже и неэффективный. С первого дня работы с нами вы получаете доступ ко всем нашим знаниям, опыту и ресурсам. </p>
+                    </div>
+                    <button class="btn">Отправить заявку<img src="./src/img/arrow.svg" alt="arrow"></button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="burgerModal">
+        <div class="burgerModal__content">
+            <div class="burgerModal__img"><img src="./src/img/logoModal.svg" alt="logotype"></div>
+            <ul class="burgerModal__tel">
+                <li class="burgerModal__tel-txt"><a href="#" class="burgerModal__tel-num">+380 93 541 20 92</a>lifecell</li>
+                <li class="burgerModal__tel-txt"><a href="#" class="burgerModal__tel-num">+380 99 311 29 79</a>Vodafone</li>
+            </ul>
+            <ul class="burgerModal__nav">
+                <li class="burgerModal__item"><a href="#" class="burgerModal__link">О нас</a></li>
+                <li class="burgerModal__item"><a href="#" class="burgerModal__link">Услуги</a></li>
+                <li class="burgerModal__item"><a href="#" class="burgerModal__link">Цены</a></li>
+            </ul>
+            <button class="btn">Отправить заявку <img src="./src/img/arrow.svg" alt="btn-arrow"></button>
         </div>
     </div>
     <script src="./src/js/script.js"></script>
