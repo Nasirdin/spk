@@ -125,7 +125,7 @@ ul,ol{list-style: none;}
 }
 @media(max-width: 668px){
     .header{
-        padding-bottom: 36px;
+        padding: 30px 0 35px;
         &__nav, .header__tel{
             display: none;
         }
