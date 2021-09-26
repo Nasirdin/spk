@@ -51,6 +51,11 @@ ul,ol{list-style: none;}
     &__link{
         color: #fff;
         font-weight: 400;
+        transition-duration: .3s;
+        transition-property: color;
+        &:hover{
+            color: #999;
+        }
     }
     &__tel{
         text-align: right;
@@ -63,6 +68,11 @@ ul,ol{list-style: none;}
             font-weight: 700;
             font-size: 17px;
             margin-left: 13px;
+            transition-duration: .3s;
+            transition-property: color;
+            &:hover{
+                color: #999;
+            }
         }
     }
     &__main{
@@ -101,6 +111,11 @@ ul,ol{list-style: none;}
         outline: none;
         border: none;
         background-color: $light;
+        transition-duration: .3s;
+        transition-property: background-color;
+        &:hover{
+            background-color: #f1f1f1;
+        }
         img{
             margin-left: 11px;
         }
@@ -129,10 +144,14 @@ ul,ol{list-style: none;}
         &__nav, .header__tel{
             display: none;
         }
+        &__navbar{
+            align-items: flex-start;
+        }
         &__burger{
             display: block;
             height: 2px;
             width: 30px;
+            margin-top: 10px;
             background-color: #fff;
             position: relative;
             cursor: pointer;

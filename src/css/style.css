@@ -59,6 +59,12 @@ ul, ol {
 .header__link {
   color: #fff;
   font-weight: 400;
+  transition-duration: .3s;
+  transition-property: color;
+}
+
+.header__link:hover {
+  color: #999;
 }
 
 .header__tel {
@@ -75,6 +81,12 @@ ul, ol {
   font-weight: 700;
   font-size: 17px;
   margin-left: 13px;
+  transition-duration: .3s;
+  transition-property: color;
+}
+
+.header__tel-num:hover {
+  color: #999;
 }
 
 .header__main {
@@ -118,6 +130,12 @@ ul, ol {
   outline: none;
   border: none;
   background-color: #00FEFF;
+  transition-duration: .3s;
+  transition-property: background-color;
+}
+
+.header__btn:hover {
+  background-color: #f1f1f1;
 }
 
 .header__btn img {
@@ -148,10 +166,14 @@ ul, ol {
   .header__nav, .header .header__tel {
     display: none;
   }
+  .header__navbar {
+    align-items: flex-start;
+  }
   .header__burger {
     display: block;
     height: 2px;
     width: 30px;
+    margin-top: 10px;
     background-color: #fff;
     position: relative;
     cursor: pointer;
