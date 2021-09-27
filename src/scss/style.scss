@@ -199,20 +199,62 @@ p{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 110px;
     }
     &__title-block{
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        margin-right: 30px;
         img{
             margin-right: 18px;
         }
         .title{
             font-size: 48px;
+            width: 170px;
+        }
+    }
+    &__text{
+        font-size: 24px;
+        font-weight: 700;
+        &:last-child{
+            max-width: 521px;
+        }
+        &:first-child{
+            margin-bottom: 40px;
+        }
+    }
+    &__items{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 290px 290px 290px;
+        margin-left: 20px;
+        align-items: center;
+    }
+    &__item{
+        position: relative;
+        z-index: 5;
+        font-weight: 700;
+        span{
+            font-size: 96px;
+            font-weight: 700;
+            color: $light;
+            z-index: -1;
+            position: absolute;
+            top: -40px;
+            left: -20px;
+        }
+        &:last-child{
+            text-align: right;
+            span{
+                left: 10px;
+            }
         }
     }
 }
-
+.price{
+    padding: 100px 0;
+}
 // modal
 .burgerModal{
     width: 100%;
@@ -262,6 +304,21 @@ p{
 
         }
     }
+    .target{
+        &__items{
+            grid-template-columns: 290px;
+            grid-template-rows: 100px 110px 60px;
+        }
+        &__item{
+            margin-bottom: 50px;
+            &:last-child{
+                text-align: left;
+                span{
+                    left: -20px;
+                }
+            }
+        }
+    }
 }
 @media (max-width: 750px){
     body{
@@ -275,6 +332,21 @@ p{
     .service{
         &__block{
             grid-template-columns: 272px 272px;
+        }
+    }
+    .target{
+        &__title-block{
+            margin-bottom: 38px;
+        }
+        &__block{
+            display: grid;
+            margin-bottom: 0;
+        }
+        &__text{
+            margin-bottom: 50px;
+        }
+        &__items{
+            margin-bottom: 30px;
         }
     }
 }

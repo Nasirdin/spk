@@ -235,12 +235,14 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 110px;
 }
 
 .target__title-block {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-right: 30px;
 }
 
 .target__title-block img {
@@ -249,6 +251,56 @@ p {
 
 .target__title-block .title {
   font-size: 48px;
+  width: 170px;
+}
+
+.target__text {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.target__text:last-child {
+  max-width: 521px;
+}
+
+.target__text:first-child {
+  margin-bottom: 40px;
+}
+
+.target__items {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 290px 290px 290px;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.target__item {
+  position: relative;
+  z-index: 5;
+  font-weight: 700;
+}
+
+.target__item span {
+  font-size: 96px;
+  font-weight: 700;
+  color: #00FEFF;
+  z-index: -1;
+  position: absolute;
+  top: -40px;
+  left: -20px;
+}
+
+.target__item:last-child {
+  text-align: right;
+}
+
+.target__item:last-child span {
+  left: 10px;
+}
+
+.price {
+  padding: 100px 0;
 }
 
 .burgerModal {
@@ -302,6 +354,19 @@ p {
   .service__block {
     grid-template-columns: 350px 350px;
   }
+  .target__items {
+    grid-template-columns: 290px;
+    grid-template-rows: 100px 110px 60px;
+  }
+  .target__item {
+    margin-bottom: 50px;
+  }
+  .target__item:last-child {
+    text-align: left;
+  }
+  .target__item:last-child span {
+    left: -20px;
+  }
 }
 
 @media (max-width: 750px) {
@@ -313,6 +378,19 @@ p {
   }
   .service__block {
     grid-template-columns: 272px 272px;
+  }
+  .target__title-block {
+    margin-bottom: 38px;
+  }
+  .target__block {
+    display: grid;
+    margin-bottom: 0;
+  }
+  .target__text {
+    margin-bottom: 50px;
+  }
+  .target__items {
+    margin-bottom: 30px;
   }
 }
 
