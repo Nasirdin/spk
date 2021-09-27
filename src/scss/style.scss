@@ -269,7 +269,10 @@ p{
     }
     &__btns{
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+    }
+    &__btn{
+        margin-left: 30px;
     }
     &__cards{
         display: flex;

@@ -319,7 +319,11 @@ p {
 
 .price__btns {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.price__btn {
+  margin-left: 30px;
 }
 
 .price__cards {
