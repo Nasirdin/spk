@@ -254,6 +254,54 @@ p{
 }
 .price{
     padding: 100px 0;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text{
+        &:first-child{
+            margin-bottom: 30px;
+        }
+        span{
+            font-weight: 700;
+        }
+    }
+    &__btns{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__cards{
+        display: flex;
+        justify-content: flex-end;   
+    }
+    &__card{
+        min-width: 259px;
+        text-align: center;
+    }
+    .card{
+        padding: 40px 0;
+        border: 1px solid $dark;
+        margin-left: 15px;
+        &:first-child{
+            margin-left: 30px;
+        }
+        &__plan{
+            margin-bottom: 15px;
+        }
+        &__title{
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
+        &__price{
+            span{
+                font-size: 70px;
+                font-weight: 700px;
+            }
+            margin-bottom: 5px;
+        }
+    }
 }
 // modal
 .burgerModal{
