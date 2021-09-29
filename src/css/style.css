@@ -199,6 +199,12 @@ p {
   margin-bottom: 20px;
 }
 
+.service__img {
+  width: 76px;
+  height: 70px;
+  margin-right: 10px;
+}
+
 .service__item {
   display: flex;
   align-items: center;
@@ -206,7 +212,8 @@ p {
 }
 
 .service__item img {
-  margin-right: 10px;
+  width: 100px;
+  height: 100%;
 }
 
 .service__item-text {
@@ -478,6 +485,60 @@ p {
   display: block;
 }
 
+.message {
+  padding: 50px 0 35px;
+  background: url(../img/from.jpg) center/cover #01244e;
+}
+
+.message__text {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  max-width: 347px;
+}
+
+.message .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.message .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.message .form__input {
+  width: 343px;
+  padding: 10px 10px 7px;
+  color: #001E42;
+  outline: none;
+  border: none;
+  background: #ececec;
+  font-size: 18px;
+}
+
+.message .form__label {
+  color: #A5AAAF;
+  font-size: 12px;
+  margin-bottom: 17px;
+}
+
+.message .form__checkbox {
+  margin-right: 7px;
+}
+
+.message .form .btn {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.message__input {
+  height: 70px;
+}
+
 @media (max-width: 960px) {
   .service__block {
     grid-template-columns: 350px 350px;
@@ -510,6 +571,15 @@ p {
   }
   .price .card:first-child {
     margin-left: 0;
+  }
+  .message .container {
+    padding: 0px 15px;
+    flex-direction: column;
+  }
+  .message__text {
+    margin-bottom: 30px;
+    max-width: 100%;
+    text-align: center;
   }
 }
 
@@ -658,6 +728,9 @@ p {
   .price__btn img {
     width: 15px;
   }
+  .message__text {
+    font-size: 33px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -676,10 +749,31 @@ p {
   .client__img {
     text-align: center;
   }
+  .message .form__label {
+    display: flex;
+    justify-content: center;
+  }
+  .message .form__input {
+    width: 310px;
+  }
+  .message .form .btn {
+    width: 310px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 340px) {
   .target__title-block img {
     display: none;
+  }
+  .message .form__label {
+    width: 270px;
+  }
+  .message .form__input {
+    width: 270px;
+  }
+  .message .form .btn {
+    width: 270px;
+    margin: 0 auto;
   }
 }

@@ -168,12 +168,18 @@ p{
         justify-content: space-between;
         margin-bottom: 20px;
     }
+    &__img{
+        width: 76px;
+        height: 70px;
+        margin-right: 10px;
+    }
     &__item{
         display: flex;
         align-items: center;
         margin-bottom: 50px;
         img{
-            margin-right: 10px;
+            width: 100px;
+            height: 100%;
         }
         &-text{
             font-weight: 700;
@@ -399,6 +405,51 @@ p{
 .burgerActive{
     display: block;
 }
+.message{
+    padding: 50px 0 35px;
+    background: url(../img/from.jpg) center/cover #01244e;
+    &__text{
+        color: #fff;
+        font-size: 36px;
+        font-weight: 700;
+        max-width: 347px;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        &__input{
+            width: 343px;
+            padding: 10px 10px 7px;
+            color: $dark;
+            outline: none;
+            border: none;
+            background: #ececec;
+            font-size: 18px;
+        }
+        &__label{
+            color: $txt-light;
+            font-size: 12px;
+            margin-bottom: 17px
+        }
+        &__checkbox{
+            margin-right: 7px;
+        }
+        .btn{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    &__input{
+        height: 70px;
+    }
+}
 
 // media
 @media (max-width: 960px){
@@ -444,6 +495,18 @@ p{
                 margin-left: 0;
             }
         }
+    }
+    .message{
+        .container{
+            padding: 0px 15px;
+            flex-direction: column;
+        }
+        &__text{
+            margin-bottom: 30px;
+            max-width: 100%;
+            text-align: center;
+        }
+        
     }
 }
 @media (max-width: 750px){
@@ -605,6 +668,11 @@ p{
             }
         }
     }
+    .message{
+        &__text{
+            font-size: 33px;
+        }
+    }
 }
 @media(max-width: 400px){
     .title{
@@ -628,12 +696,41 @@ p{
             text-align: center;
         }
     }
+    .message{
+        .form{
+            &__label{
+                display: flex;
+                justify-content: center;
+            }
+            &__input{
+                width: 310px;
+            }
+            .btn{
+                width: 310px;
+                margin: 0 auto;
+            }
+        }
+    }
 }
 @media (max-width: 340px) {
     .target{
         &__title-block{
             img{
                 display: none;
+            }
+        }
+    }
+    .message{
+        .form{
+            &__label{
+                width: 270px;
+            }
+            &__input{
+                width: 270px;
+            }
+            .btn{
+                width: 270px;
+                margin: 0 auto;
             }
         }
     }
