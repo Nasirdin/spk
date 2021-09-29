@@ -35,11 +35,7 @@ p{
 .title{
     font-size: 50px;
 }
-@media (max-width: 750px){
-    .title{
-        font-size: 40px;
-    }
-}
+
 .btn{
     padding: 15px 22px;
     display: flex;
@@ -323,6 +319,40 @@ p{
         }
     }
 }
+.client{
+    padding: 20px 0;
+    .title{
+        margin-bottom: 30px;
+    }
+    &__logo{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+    }
+    &__title{
+        color: $txt-light;
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    .mb{
+        margin-bottom: 10px;
+    }
+    &__text{
+        font-size: 13px;
+        color: $txt-light;
+        line-height: 15.6px;
+        padding: 2px 0;
+    }
+    &__blocks{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block{
+        max-width: 48%;
+    }
+}
 // modal
 .burgerModal{
     width: 100%;
@@ -523,6 +553,17 @@ p{
             margin-bottom: 20px;
         }
     }
+    .client{
+        &__blocks{
+            flex-direction: column;
+        }
+        &__block{
+            max-width: 100%;
+            &:first-child{
+                margin-bottom: 20px;
+            };
+        }
+    }
 }
 @media(max-width: 565px){
     .title{
@@ -576,7 +617,15 @@ p{
             }
         }
         &__items{
-            grid-template-columns: 270px;
+            grid-template-columns: 250px;
+        }
+    }
+    .client{
+        &__logo{
+            display: block;
+        }
+        &__img{
+            text-align: center;
         }
     }
 }

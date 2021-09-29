@@ -39,12 +39,6 @@ p {
   font-size: 50px;
 }
 
-@media (max-width: 750px) {
-  .title {
-    font-size: 40px;
-  }
-}
-
 .btn {
   padding: 15px 22px;
   display: flex;
@@ -387,6 +381,48 @@ p {
   font-weight: 700;
 }
 
+.client {
+  padding: 20px 0;
+}
+
+.client .title {
+  margin-bottom: 30px;
+}
+
+.client__logo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.client__title {
+  color: #A5AAAF;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.client .mb {
+  margin-bottom: 10px;
+}
+
+.client__text {
+  font-size: 13px;
+  color: #A5AAAF;
+  line-height: 15.6px;
+  padding: 2px 0;
+}
+
+.client__blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client__block {
+  max-width: 48%;
+}
+
 .burgerModal {
   width: 100%;
   height: 100vh;
@@ -577,6 +613,15 @@ p {
   .about .title {
     margin-bottom: 20px;
   }
+  .client__blocks {
+    flex-direction: column;
+  }
+  .client__block {
+    max-width: 100%;
+  }
+  .client__block:first-child {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 565px) {
@@ -623,7 +668,13 @@ p {
     width: 120px;
   }
   .target__items {
-    grid-template-columns: 270px;
+    grid-template-columns: 250px;
+  }
+  .client__logo {
+    display: block;
+  }
+  .client__img {
+    text-align: center;
   }
 }
 
