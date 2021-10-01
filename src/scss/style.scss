@@ -359,6 +359,49 @@ p{
         max-width: 48%;
     }
 }
+.footer{
+    padding: 28px 0;
+    background-color: $txt-ultra;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__email{
+        color: #FFF;
+    }
+    &__item{
+        color: #fff;
+        margin-bottom: 10px;
+        transition: .5s;
+        &:first-child{
+            margin-bottom: 16px;
+        }
+        a{
+            &:hover{
+                color: #999;
+            }
+        }
+    }
+    &__link{
+        color: #fff;
+        font-weight: 700;
+        margin-right: 10px;
+    }
+    &__right{
+        max-width: 304px;
+        text-align: right;
+    }
+    &__link2{
+        color: $light;
+        text-align: right;
+        margin-bottom: 19px;
+    }
+    &__text{
+        color: #fff;
+        text-transform: uppercase;
+    }
+}
 // modal
 .burgerModal{
     width: 100%;
@@ -673,6 +716,18 @@ p{
             font-size: 33px;
         }
     }
+    .footer{
+        .container{
+            display: block;
+            text-align: center;
+        }
+        &__right{
+            margin: 10px auto 0;
+            p{
+                text-align: center;
+            }
+        }
+    }
 }
 @media(max-width: 400px){
     .title{
@@ -708,6 +763,17 @@ p{
             .btn{
                 width: 310px;
                 margin: 0 auto;
+            }
+        }
+    }
+    .footer{
+        .container{
+            text-align: left;
+        }
+        &__right{
+            margin: 10px 0 0;
+            p{
+                text-align: left;
             }
         }
     }

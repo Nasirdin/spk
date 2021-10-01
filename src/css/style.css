@@ -430,6 +430,57 @@ p {
   max-width: 48%;
 }
 
+.footer {
+  padding: 28px 0;
+  background-color: #002047;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__email {
+  color: #FFF;
+}
+
+.footer__item {
+  color: #fff;
+  margin-bottom: 10px;
+  transition: .5s;
+}
+
+.footer__item:first-child {
+  margin-bottom: 16px;
+}
+
+.footer__item a:hover {
+  color: #999;
+}
+
+.footer__link {
+  color: #fff;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.footer__right {
+  max-width: 304px;
+  text-align: right;
+}
+
+.footer__link2 {
+  color: #00FEFF;
+  text-align: right;
+  margin-bottom: 19px;
+}
+
+.footer__text {
+  color: #fff;
+  text-transform: uppercase;
+}
+
 .burgerModal {
   width: 100%;
   height: 100vh;
@@ -731,6 +782,16 @@ p {
   .message__text {
     font-size: 33px;
   }
+  .footer .container {
+    display: block;
+    text-align: center;
+  }
+  .footer__right {
+    margin: 10px auto 0;
+  }
+  .footer__right p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 400px) {
@@ -759,6 +820,15 @@ p {
   .message .form .btn {
     width: 310px;
     margin: 0 auto;
+  }
+  .footer .container {
+    text-align: left;
+  }
+  .footer__right {
+    margin: 10px 0 0;
+  }
+  .footer__right p {
+    text-align: left;
   }
 }
 
